@@ -63,4 +63,5 @@ io.on("connection", (socket) => {
   });
 });
 // console.log("i m on " + PORT);
+console.log("ok it working");
 httpServer.listen(3000);

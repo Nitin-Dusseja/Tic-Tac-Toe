@@ -6,7 +6,10 @@ const { Server } = require("socket.io");
 // const PORT = process.env.PORT;
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  cors: "*",
+  cors:  {
+    origin: "http://localhost:5174/",
+    credentials: true
+  }
 });
 
 const allUsers = {};
